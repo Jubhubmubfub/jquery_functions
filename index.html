@@ -8,6 +8,58 @@
     <script type="text/javascript">
       $(document).ready(function(){
 
+        $('#addClassButton').click(function(){
+          console.log("turn text red");
+          $('#addClass').addClass('red');
+        });
+
+        $('#slideToggleButton').click(function(){
+          console.log("slide hide the text");
+          $('#slideToggle').slideToggle();
+        });
+
+        $('#appendButton').click(function(){
+          console.log("append some text");
+          $('#append').append(" Here is some appended text!");
+        });
+
+        $('#hideButton').click(function(){
+          console.log("hiding some text");
+          $('#hide').hide();
+        });
+
+        $('#show').hide();
+        $('#showButton').click(function(){
+          console.log("showing some text");
+          $('#show').show();
+        });
+
+        $('#toggleButton').click(function(){
+          console.log("toggling some text");
+          $('#toggle').toggle("slow");
+        });
+
+        $('#slideUpButton').click(function(){
+          console.log("sliding up some text");
+          $('#slideUp').slideUp();
+        });
+
+        $('#slideDown').hide();
+        $('#slideDownButton').click(function(){
+          console.log("sliding down some text");
+          $('#slideDown').slideDown();
+        });
+
+        $('#fadeIn').hide();
+        $('#fadeInButton').click(function(){
+          console.log("fading in some text");
+          $('#fadeIn').fadeIn();
+        });
+
+        $('#fadeOutButton').click(function(){
+          console.log("fading out some text");
+          $('#fadeOut').fadeOut();
+        });
 
       });
     </script>
@@ -16,63 +68,105 @@
     <div class="wrapper">
       <div class="block">
         <div class="block1">
-          <button type="button" name="AddClass">AddClass</button>
+          <button id="addClassButton" type="button" name="AddClass">AddClass</button>
         </div>
         <div class="block2">
           <h1>AddClass</h1>
-          <p>Click the button to add class 'red' to this paragraph</p>
+          <p id="addClass">Click the button to add class 'red' to this paragraph</p>
         </div>
       </div>
       <hr>
       <div class="block">
         <div class="block1">
-          <button type="button" name="AddClass">Slidetoggle</button>
+          <button id="slideToggleButton" type="button" name="slidetoggle">Slidetoggle</button>
         </div>
         <div class="block2">
           <h1>Slidetoggle</h1>
-          <p>Click the button to slidetoggle a hidden image</p>
+          <p id="slideToggle">Click the button to slidetoggle a hidden image</p>
         </div>
       </div>
       <hr>
       <div class="block">
         <div class="block1">
-          <button type="button" name="AddClass">Append</button>
+          <button id="appendButton" type="button" name="append">Append</button>
         </div>
         <div class="block2">
           <h1>Append</h1>
-          <p>Click the button to append a new paragraph!</p>
-        </div>
-      </div>
-      <!-- <hr>
-      <div class="block">
-        <div class="block1">
-          <button type="button" name="AddClass">AddClass</button>
-        </div>
-        <div class="block2">
-          <h1>AddClass</h1>
-          <p>Click the button to add class 'red' to this paragraph</p>
+          <p id="append">Click the button to append a new paragraph!</p>
         </div>
       </div>
       <hr>
       <div class="block">
         <div class="block1">
-          <button type="button" name="AddClass">AddClass</button>
+          <button id="hideButton" type="button" name="hide">Hide</button>
         </div>
         <div class="block2">
-          <h1>AddClass</h1>
-          <p>Click the button to add class 'red' to this paragraph</p>
+          <h1>Hide</h1>
+          <p id="hide">Click the button to hide the text!</p>
         </div>
       </div>
       <hr>
       <div class="block">
         <div class="block1">
-          <button type="button" name="AddClass">AddClass</button>
+          <button id="showButton" type="button" name="show">Show</button>
         </div>
         <div class="block2">
-          <h1>AddClass</h1>
-          <p>Click the button to add class 'red' to this paragraph</p>
+          <h1>Show</h1>
+          <p>Click the button to show the text!</p>
+          <p id="show">Wow! I'm not hidden anymore!</p>
         </div>
-      </div> -->
-    </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="toggleButton" type="button" name="toggle">Toggle</button>
+        </div>
+        <div class="block2">
+          <h1>Toggle</h1>
+          <p id="toggle">Click the button to Toggle text!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="slideUpButton" type="button" name="slideUp">SlideUp</button>
+        </div>
+        <div class="block2">
+          <h1>SlideUp</h1>
+          <p id="slideUp">Click the button to slide up the text!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="slideDownButton" type="button" name="slideDown">SlideDown</button>
+        </div>
+        <div class="block2">
+          <h1>SlideDown</h1>
+          <p>Click the button to slide down the text!</p>
+          <p id="slideDown">Wow! What a fun slide!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="fadeInButton" type="button" name="fadeIn">fadeIn</button>
+        </div>
+        <div class="block2">
+          <h1>fadeIn</h1>
+          <p>Click the button to fade in the text!</p>
+          <p id="fadeIn">Wow! I faded in!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="fadeOutButton" type="button" name="fadeOut">FadeOut</button>
+        </div>
+        <div class="block2">
+          <h1>fadeOut</h1>
+          <p id="fadeOut">Click the button to fade out the text!</p>
+        </div>
+      </div>
   </body>
 </html>

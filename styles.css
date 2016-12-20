@@ -34,15 +34,17 @@
   /*background: brown;*/
   position:absolute;
   left:0px;
-  text-align:left;
+  text-align:center;
 }
 
 .block1 button {
   /*background:pink;*/
   display:inline-block;
-  margin:90px 0px 30px 30px;
+  margin:90px 0px 30px 0px;
   padding:5px 10px;
   font-size:1.5em;
+  border-radius: 5px;
+  background:orange;
 }
 
 .block .block2 {
@@ -61,4 +63,8 @@
 .block2 p {
   font-size:2em;
   margin:10px 10px 20px 10px;
+}
+
+.red {
+  color:red;
 }
