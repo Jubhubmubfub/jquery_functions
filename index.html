@@ -61,6 +61,44 @@
           $('#fadeOut').fadeOut();
         });
 
+        $('#beforeButton').click(function(){
+          console.log("adding some text before");
+          $('#before').before("Hello! ");
+        });
+
+        $('#afterButton').click(function(){
+          console.log("adding some text after");
+          $('#after').after("Wassap! ");
+        });
+
+        $('#htmlButton').click(function(){
+          console.log("editing html");
+          $('#html').html("<strong>bold</strong> <em>italicized</em>");
+        });
+
+        $('#attrButton').click(function(){
+          console.log("showing attr");
+          var attr = $('#attr').attr('id');
+          $('#attr').text("The attribute is " + attr);
+        });
+
+        $('#valButton').click(function(){
+          console.log("showing val");
+          var val = $('#value').val();
+          $('#placeValue').text("The value of the attribute is " + val);
+        });
+
+        $('#textButton').click(function(){
+          console.log("editing text");
+          $('#text').text("I changed into some different text!");
+        });
+
+        $('#data').data("person", { first: "Marcus",last: " Sakoda"})
+        $('#dataButton').click(function(){
+          console.log("showing data");
+          $('#data').text($('#data').data("person").first + ($('#data').data("person").last));
+        });
+
       });
     </script>
   </head>
@@ -168,5 +206,77 @@
           <p id="fadeOut">Click the button to fade out the text!</p>
         </div>
       </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="beforeButton" type="button" name="before">before</button>
+        </div>
+        <div class="block2">
+          <h1>before</h1>
+          <p id="before">Click the button to add text before the text!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="afterButton" type="button" name="after">after</button>
+        </div>
+        <div class="block2">
+          <h1>after</h1>
+          <p id="after">Click the button to add text after the text!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="htmlButton" type="button" name="html">html</button>
+        </div>
+        <div class="block2">
+          <h1>html</h1>
+          <p id="html">Click the button to change the html of the text!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="attrButton" type="button" name="attr">attr</button>
+        </div>
+        <div class="block2">
+          <h1>attr</h1>
+          <p id="attr">Click the button to see the attr of the text!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="valButton" type="button" name="val">val</button>
+        </div>
+        <div class="block2">
+          <h1>val</h1>
+          <input id="value" type="text" value="something">
+          <p id="placeValue">Click the button to place the value here!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="textButton" type="button" name="text">text</button>
+        </div>
+        <div class="block2">
+          <h1>text</h1>
+          <p id="text">Click the button to place the text here!</p>
+        </div>
+      </div>
+      <hr>
+      <div class="block">
+        <div class="block1">
+          <button id="dataButton" type="button" name="data">data</button>
+        </div>
+        <div class="block2">
+          <h1>data</h1>
+          <p id="data">Click the button to see stored data!</p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
